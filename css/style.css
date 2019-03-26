@@ -7,11 +7,28 @@ body {
   padding: 10px;
   background: #c4e6e7;
 }
+/* Create dynamic images*/
 img {
   max-width: 100%;
   height: auto;
 }
-/* Header/Blog Title */
+/* to create a dynamic embeded video*/
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+/* Header Title */
 .header {
   padding: 30px;
   text-align: center;
@@ -64,7 +81,7 @@ img {
   padding-left: 20px;
 }
 
-/* Add a card effect for pages */
+/* Add a card effect in content area */
 .card {
   background-color: white;
   padding: 20px;
@@ -90,7 +107,7 @@ img {
 }
 
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+/* When the screen is less than 925px wide, make header font size decrease */
 @media screen and (max-width: 925px) {
 
   .header h1 {
@@ -98,7 +115,8 @@ img {
   }
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+/* When the screen is less than 800px wide, 
+make the two columns stack on top of each other instead of next to each other and header font size decrease*/
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
@@ -109,7 +127,8 @@ img {
   }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+/* When the screen is less than 480px wide, 
+make the navigation links stack on top of each other instead of next to each other and header font size decrease further more */
 @media screen and (max-width: 480px) {
   .topnav a {
     float: none;
