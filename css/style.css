@@ -12,21 +12,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* to create a dynamic embeded video*/
-.video-container {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 30px; height: 0; overflow: hidden;
-}
-.video-container iframe,
-.video-container object,
-.video-container embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
 
 /* Header Title */
 .header {
@@ -63,8 +48,22 @@ height: 100%;
 .topnav a:hover {
   background-color: #258a83;
   color: black;
-  
 }
+
+/* to create a dynamic embeded video*/
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+.video-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+} 
+
 
 /* Create two unequal columns*/
 /* Left column */
@@ -87,6 +86,12 @@ height: 100%;
   padding: 20px;
   margin-top: 20px;
   border-radius: 25px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 6px;
 }
 
 /* Clear floats after the columns */
@@ -136,6 +141,10 @@ make the navigation links stack on top of each other instead of next to each oth
   }
   .header h1 {
   font-size: 25px;
+  }
+  
+  .column {
+    width: 100%;
   }
 }
 
